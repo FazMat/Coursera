@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-style: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 30px;
+}
+
+section {
+    background-color: gray;
+    border: 2px solid black;
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+
+h3 {
+    text-transform: capitalize;
+    border: 2px solid black;
+    position: relative;
+    float: right;
+    padding: 0 20px;
+    margin: -2px;
+}
+
+.chicken h3 {
+    background-color: burlywood;
+}
+
+.beef h3 {
+    background-color: crimson;
+}
+
+.sushi h3 {
+    background-color: cornflowerblue;
+}
+
+p {
+    clear: both;
+    margin: 30px 10px 10px;
+}
