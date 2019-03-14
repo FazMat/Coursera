@@ -9,24 +9,43 @@ h1 {
     font-style: bold;
     text-transform: capitalize;
     text-align: center;
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "chicken chicken beef beef sushi sushi";
+    padding: 0 20px;
 }
 
 section {
     background-color: gray;
-    border: 2px solid black;
-    position: relative;
-    width: 300px;
-    margin: 20px auto;
+    border: 1px solid black;
+    margin: 20px;
 }
 
 h3 {
     text-transform: capitalize;
-    border: 2px solid black;
+    border: 1px solid black;
     position: relative;
     float: right;
     padding: 0 20px;
-    margin: -2px;
+    margin: -1px;
+}
+
+.chicken {
+    grid-area: chicken;
+}
+
+.beef {
+    grid-area: beef;
+}
+
+.sushi {
+    grid-area: sushi;
 }
 
 .chicken h3 {
@@ -44,4 +63,24 @@ h3 {
 p {
     clear: both;
     margin: 30px 10px 10px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        grid-template-areas: 
+            "chicken chicken chicken beef  beef  beef"
+            "sushi   sushi   sushi   sushi sushi sushi"
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-areas: 
+            "chicken chicken chicken chicken chicken chicken"
+            "beef    beef    beef    beef    beef    beef"
+            "sushi   sushi   sushi   sushi   sushi   sushi "
+    }
+    
+
 }
