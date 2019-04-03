@@ -3,41 +3,119 @@
     <title>Module 2</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Our menu</h1>
+    <header>
+        <nav id='header-nav' class='navbar navbar-default'>
+            <div class='container'>
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <p>Food, LLC</p>
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div id='collapsable-nav' class='collapse navbar-collpase'>
+                <div class='text-center'><a href="#chicken"><h2>Chicken</h2></a></div>
+                <div class='text-center'><a href="#beef"><h2>Beef</h2></a></div>
+                <div class='text-center'><a href="#sushi"><h2>Sushi</h2></a></div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class='text-center' id='main-heading'>Our menu</h1>
 
     <div class="container">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <section class="chicken" id='chicken'>
+                <h3>chicken</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed semper ipsum et ex hendrerit, ut ultrices neque interdum. 
+                    Vivamus viverra suscipit nunc et dignissim. 
+                    Phasellus eleifend diam magna, sed porttitor tortor aliquet a. 
+                    Praesent condimentum auctor accumsan. 
+                    Fusce feugiat posuere massa, eget gravida dolor aliquam vitae. 
+                    In quis felis turpis. Integer nisi turpis, dapibus vulputate cursus sit amet, finibus sed tellus. 
+                    Mauris porta ultricies orci nec bibendum. 
+                    Suspendisse sit amet fermentum sapien. In hac habitasse platea dictumst. 
+                    Maecenas sed malesuada nulla. Vivamus accumsan mauris eu dictum varius. 
+                    Quisque volutpat sapien pretium dui posuere, quis sagittis nulla faucibus. 
+                    Suspendisse lacinia, odio id facilisis efficitur, urna risus vehicula dolor, quis pulvinar leo enim ac ante. 
+                    In et sollicitudin lacus. Donec ut ultrices lectus. In quis felis turpis. Integer nisi turpis, dapibus vulputate cursus sit amet, finibus sed tellus. 
+                    Mauris porta ultricies orci nec bibendum. 
+                    Suspendisse sit amet fermentum sapien. In hac habitasse platea dictumst. 
+                    Maecenas sed malesuada nulla. Vivamus accumsan mauris eu dictum varius. 
+                    Quisque volutpat sapien pretium dui posuere, quis sagittis nulla faucibus. 
+                    Suspendisse lacinia, odio id facilisis efficitur, urna risus vehicula dolor, quis pulvinar leo enim ac ante. 
+                    In et sollicitudin lacus. Donec ut ultrices lectus.
+                </p>
+                <h4 class='text-right'><a href='#main-heading'>Back to top</a></h4>
+            </section>
+        </div>
+            
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <section class="beef" id='beef'>
+                <h3>beef</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed semper ipsum et ex hendrerit, ut ultrices neque interdum. 
+                    Vivamus viverra suscipit nunc et dignissim. 
+                    Phasellus eleifend diam magna, sed porttitor tortor aliquet a. 
+                    Praesent condimentum auctor accumsan. 
+                    Fusce feugiat posuere massa, eget gravida dolor aliquam vitae. 
+                    In quis felis turpis. Integer nisi turpis, dapibus vulputate cursus sit amet, finibus sed tellus. 
+                    Mauris porta ultricies orci nec bibendum. 
+                    Suspendisse sit amet fermentum sapien. In hac habitasse platea dictumst. 
+                    Maecenas sed malesuada nulla. Vivamus accumsan mauris eu dictum varius. 
+                    Quisque volutpat sapien pretium dui posuere, quis sagittis nulla faucibus. 
+                    Suspendisse lacinia, odio id facilisis efficitur, urna risus vehicula dolor, quis pulvinar leo enim ac ante. 
+                    In et sollicitudin lacus. Donec ut ultrices lectus. In quis felis turpis. Integer nisi turpis, dapibus vulputate cursus sit amet, finibus sed tellus. 
+                    Mauris porta ultricies orci nec bibendum. 
+                    Suspendisse sit amet fermentum sapien. In hac habitasse platea dictumst. 
+                    Maecenas sed malesuada nulla. Vivamus accumsan mauris eu dictum varius. 
+                    Quisque volutpat sapien pretium dui posuere, quis sagittis nulla faucibus. 
+                    Suspendisse lacinia, odio id facilisis efficitur, urna risus vehicula dolor, quis pulvinar leo enim ac ante. 
+                    In et sollicitudin lacus. Donec ut ultrices lectus.
+                </p>
+                <h4 class='text-right'><a href='#main-heading'>Back to top</a></h4>
+            </section>
+        </div>
         
-        <section class="chicken">
-            <h3>chicken</h3>
-            <p>Chicken is great for your health! Eat a lot of chicken! 
-                You wont regret it, I promise. 
-                Fresh from the farm, yesterday they were running around and now
-                they are here to kill your hunger. 
-            </p>
-        </section>
-    
-        <section class="beef">
-            <h3>beef</h3>
-            <p>Beef is all you need to eat if you want to enjoy life. 
-                Eat as much as you want, it will cost you almost nothing. 
-                Delicious, juicy, what else do you need? Raw, medium, well done?
-                Name it and you get it.
-            </p>
-        </section>
-    
-        <section class="sushi">
-            <h3>sushi</h3>
-            <p>Raw fish. Sounds like a great idea! No fire involved, fresh taste is guaranteed!
-                Lowest price ever! Probably because they are not so fresh after all...
-            </p>
-        </section>
+        <div class="col-xs-12 col-lg-4">
+            <section class="sushi" id='sushi'>
+                <h3>sushi</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed semper ipsum et ex hendrerit, ut ultrices neque interdum. 
+                    Vivamus viverra suscipit nunc et dignissim. 
+                    Phasellus eleifend diam magna, sed porttitor tortor aliquet a. 
+                    Praesent condimentum auctor accumsan. 
+                    Fusce feugiat posuere massa, eget gravida dolor aliquam vitae. 
+                    In quis felis turpis. Integer nisi turpis, dapibus vulputate cursus sit amet, finibus sed tellus. 
+                    Mauris porta ultricies orci nec bibendum. 
+                    Suspendisse sit amet fermentum sapien. In hac habitasse platea dictumst. 
+                    Maecenas sed malesuada nulla. Vivamus accumsan mauris eu dictum varius. 
+                    Quisque volutpat sapien pretium dui posuere, quis sagittis nulla faucibus. 
+                    Suspendisse lacinia, odio id facilisis efficitur, urna risus vehicula dolor, quis pulvinar leo enim ac ante. 
+                    In et sollicitudin lacus. Donec ut ultrices lectus. In quis felis turpis. Integer nisi turpis, dapibus vulputate cursus sit amet, finibus sed tellus. 
+                    Mauris porta ultricies orci nec bibendum. 
+                    Suspendisse sit amet fermentum sapien. In hac habitasse platea dictumst. 
+                    Maecenas sed malesuada nulla. Vivamus accumsan mauris eu dictum varius. 
+                    Quisque volutpat sapien pretium dui posuere, quis sagittis nulla faucibus. 
+                    Suspendisse lacinia, odio id facilisis efficitur, urna risus vehicula dolor, quis pulvinar leo enim ac ante. 
+                    In et sollicitudin lacus. Donec ut ultrices lectus.
+                </p>
+                <h4 class='text-right'><a href='#main-heading'>Back to top</a></h4>
+            </section>
+        </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>

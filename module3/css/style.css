@@ -5,20 +5,47 @@
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: darkgray;
+    text-decoration: none;
+}
+
+header .navbar {
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 0;
+}
+
+header p {
+    color: black;
+    font-size: 2em;
+}
+
+.navbar .navbar-toggle,
+.navbar .navbar-toggle .icon-bar {
+    border: 2px solid black;
+}
+
 h1 {
-    font-style: bold;
+    font-weight: bold;
     text-transform: capitalize;
-    text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "chicken beef sushi";
-    padding: 0 20px;
+#collapsable-nav {
+    background-color: lightgray;
+    border-top: 2px solid black;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+
+#collapsable-nav div:not(:first-child){
+    border-top: 2px solid black;
 }
 
 section {
@@ -36,18 +63,6 @@ h3 {
     margin: -1px;
 }
 
-.chicken {
-    grid-area: chicken;
-}
-
-.beef {
-    grid-area: beef;
-}
-
-.sushi {
-    grid-area: sushi;
-}
-
 .chicken h3 {
     background-color: burlywood;
 }
@@ -60,29 +75,8 @@ h3 {
     background-color: cornflowerblue;
 }
 
-p {
+section p {
     clear: both;
     margin: 30px 10px 10px;
 }
 
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "chicken beef"
-            "sushi   sushi"
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "chicken"
-            "beef"
-            "sushi"
-    }
-    
-
-}
